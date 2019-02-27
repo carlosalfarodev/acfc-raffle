@@ -60,3 +60,6 @@ button:focus {
 .fa-heart {
   color: red;
 }
+.winner {
+  font-size: 4rem;
+}

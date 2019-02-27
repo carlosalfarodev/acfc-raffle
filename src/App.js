@@ -29,7 +29,7 @@ class App extends Component {
         this.setState({
           winner: names[Math.floor(Math.random() * names.length)]
         }),
-      100
+      300
     );
   }
 
@@ -38,7 +38,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h1>Generar Jugador</h1>
-          <Winner winner={this.state.winner} />
+          <Winner className="winner" winner={this.state.winner} />
           <Sound
             url="https://www.dinorajimenez.online/wp-content/uploads/2019/02/drumroll.wav"
             playStatus={this.state.playStatus}
@@ -46,7 +46,7 @@ class App extends Component {
           <button onClick={() => this.generateWinner()}>Generar</button>
 
           <small className="github-link">
-            Made with by&nbsp;
+            Made with ❤ by&nbsp;
             <a
               href="https://carlosalfaro.me"
               target="_blank"
